@@ -10,7 +10,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 		-- Useful status updates for LSP.
-		{ "j-hui/fidget.nvim", opts = {} },
+		{ "j-hui/fidget.nvim",       opts = {} },
 
 		-- Allows extra capabilities provided by blink.cmp
 		"saghen/blink.cmp",
@@ -241,7 +241,7 @@ return {
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 		require("mason-lspconfig").setup({
-			ensure_installed = { "gopls", "delve", "goimports" }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+			ensure_installed = { "cssls", "gopls" }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
 			automatic_installation = false,
 			handlers = {
 				function(server_name)
