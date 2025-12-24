@@ -1,6 +1,9 @@
 return {
 	"echasnovski/mini.nvim",
 	config = function()
+		-- Autopairs: Manages character pairs (brackets, quotes, etc.) automatically
+		require("mini.pairs").setup({})
+
 		-- Better Around/Inside textobjects
 		--
 		-- Examples:
